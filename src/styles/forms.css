@@ -1,0 +1,44 @@
+/* Стили для форм */
+.form-container {
+  background-color: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+}
+
+.input-field {
+  width: 100%;
+  padding: 1rem;
+  margin: 1rem 0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.input-field:focus {
+  border-color: #4CAF50; /* Зеленый цвет при фокусе */
+  outline: none;
+}
+
+.input-error {
+  color: #d32f2f;
+  font-size: 0.875rem;
+}
+
+.button {
+  width: 100%;
+  padding: 1rem;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.button:disabled {
+  background-color: #aaa;
+  cursor: not-allowed;
+}

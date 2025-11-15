@@ -1,0 +1,398 @@
+/* src/styles/queues.css */
+
+.queues-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* верхняя панель */
+
+.queues-top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 24px;
+}
+
+.queues-filters-btn {
+  border: none;
+  background: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.queues-create-btn {
+  padding: 10px 24px;
+  border-radius: 20px;
+  border: none;
+  background: #d9d9d9;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* карточка очереди */
+
+.queue-card {
+  margin-top: 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #d9d9d9;
+  border-radius: 24px;
+  padding: 24px 32px;
+  max-width: 900px;
+}
+
+.queue-card-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.queue-card-avatar {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 1px solid #c4c4c4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.queue-card-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 14px;
+}
+
+.queue-card-owner {
+  font-size: 14px;
+}
+
+.queue-card-title {
+  font-weight: 600;
+}
+
+.queue-card-description {
+  font-style: italic;
+}
+
+/* правая часть карточки */
+
+.queue-card-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.queue-card-date {
+  font-size: 12px;
+}
+
+.queue-card-details-btn {
+  padding: 8px 18px;
+  border-radius: 12px;
+  border: none;
+  background: #ffffff;
+  cursor: pointer;
+  font-size: 13px;
+}
+
+/* ===== МОДАЛЬНОЕ ОКНО ===== */
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.05); /* лёгкое затемнение */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 50;
+}
+
+.modal-window {
+  width: 640px;
+  max-width: 90%;
+  background: #ffffff;
+  border-radius: 24px;
+  padding: 32px 40px 40px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.modal-row {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.modal-label {
+  font-size: 14px;
+}
+
+.modal-input-date {
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 4px 0;
+  font-size: 14px;
+}
+
+.modal-input-date:focus {
+  outline: none;
+  border-bottom-color: #333333;
+}
+
+/* Время */
+
+.modal-time-list {
+  display: flex;
+  gap: 12px;
+}
+
+.time-slot-btn {
+  padding: 6px 16px;
+  border-radius: 16px;
+  border: none;
+  background: #d9d9d9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.time-slot-btn--active {
+  background: #bcbcbc;
+}
+
+/* Приоритет */
+
+.modal-priority-wrapper {
+  position: relative;
+  display: inline-block;
+  width: 180px;
+}
+
+.modal-select {
+  width: 100%;
+  padding: 8px 30px 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #444444;
+  background: #ffffff;
+  appearance: none;
+  font-size: 14px;
+}
+
+.modal-select:focus {
+  outline: none;
+}
+
+.modal-select-arrow {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-size: 12px;
+}
+
+/* Цель визита */
+
+.modal-textarea {
+  border: none;
+  border-bottom: 1px solid #c4c4c4;
+  padding: 4px 0;
+  font-size: 14px;
+  resize: none;
+}
+
+.modal-textarea:focus {
+  outline: none;
+  border-bottom-color: #333333;
+}
+
+/* Низ модалки */
+
+.modal-bottom {
+  margin-top: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-file-label {
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.modal-file-input {
+  display: none;
+}
+
+.modal-submit-btn {
+  padding: 10px 24px;
+  border-radius: 10px;
+  border: none;
+  background: #d9d9d9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== МОИ ОЧЕРЕДИ ===== */
+
+.my-queue-list {
+  margin-top: 32px;
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.my-queue-card {
+  background: #d9d9d9;
+  border-radius: 24px;
+  padding: 20px 32px;
+}
+
+.my-queue-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-queue-card-title {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.my-queue-card-date {
+  font-size: 12px;
+}
+
+.my-queue-card-footer {
+  margin-top: 16px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-queue-card-btn {
+  padding: 8px 18px;
+  border-radius: 14px;
+  border: none;
+  background: #ffffff;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.my-queues-calendar-wrapper {
+  margin-top: 32px;
+  max-width: 900px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.my-queues-calendar-btn {
+  padding: 10px 24px;
+  border-radius: 16px;
+  border: none;
+  background: #d9d9d9;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* ===== КАЛЕНДАРЬ ===== */
+
+.calendar-page {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.calendar-title {
+  margin-top: 40px;
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.calendar-card {
+  max-width: 900px;
+  background: #d9d9d9;
+  border-radius: 16px;
+  padding: 16px 16px 24px;
+}
+
+.calendar-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.calendar-header-square {
+  width: 32px;
+  height: 24px;
+  background: #bfbfbf;
+  border-radius: 4px;
+}
+
+.calendar-nav-btn {
+  width: 40px;
+  height: 32px;
+  border-radius: 8px;
+  border: none;
+  background: #c4c4c4;
+  cursor: pointer;
+}
+
+/* таблица */
+
+.calendar-grid-wrapper {
+  position: relative;
+  background: #f5f5f5;
+  border-radius: 4px;
+  overflow: hidden;
+  padding-right: 18px; /* место под псевдо-скроллбар */
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #a6a6a6;
+  text-align: center;
+  height: 32px;
+  background: #f5f5f5;
+}
+
+.calendar-table thead th {
+  background: #d9d9d9;
+  font-weight: 500;
+}
+
+.calendar-time-col {
+  width: 80px;
+  text-align: left;
+  padding-left: 8px;
+}
+
+/* декоративный вертикальный скролл */
+
+.calendar-scrollbar {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 12px;
+  height: 100%;
+  background: #d0d0d0;
+}

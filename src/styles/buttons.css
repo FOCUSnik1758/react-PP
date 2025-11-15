@@ -1,0 +1,30 @@
+/* Стили для кнопок */
+.button-primary {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-primary:hover {
+  background-color: #45a049;
+}
+
+.button-secondary {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 1rem;
+  width: 100%;
+  font-size: 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.button-secondary:hover {
+  background-color: #007bb5;
+}
